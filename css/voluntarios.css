@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*Empieza formulario*/
+#formulario{
+    width: 100%;
+    min-height: 300px;
+    background: white;
+    font-size: 15px;
+}
+#textoforum{
+    margin-left: 10px;
+}
+input{
+    border-radius: 0px;
+    font: 15px arial,sans-serif;
+    margin: 0px;
+}
+.panell label{
+    color: #395870;
+    display: block;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+.panell input{
+    background: #fff;
+    border: 1px solid #c6c7cc;
+    color: #636466;
+    padding: 6px;
+    margin-top: 6px;
+    width: 20%;
+}
+.mensaje{
+    resize: none;
+    width: 90%;
+}
+/*Acaba el formulario*/

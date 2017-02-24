@@ -1,0 +1,283 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    position: relative;
+    min-height: 100%;
+    min-width: 100%;
+}
+body{
+/* Gracias a a esto ningun lado tiene margen pero separa el body del footer*/
+    margin: 0 0 90px;
+}
+/*#index{
+   background: #061826;
+}*/
+/*Imágenes body*/
+img.gatos{
+    width: 100%;
+    height: 600px;
+    padding: -100px;
+   margin-bottom: -50px;
+}
+/*Titulo*/
+h2{
+    background: cadetblue;
+    text-align: center;
+    color:white;
+    font-size: 35px;
+    margin: 90px;
+}
+h3{
+   background: cadetblue;
+   text-align: center;
+   font-size: 40px;
+   color: white;
+    margin: 90px;
+}
+p{
+    margin-left: 50px;
+    font-size: 30px;
+
+}
+
+/*Header*/
+header{
+    width: 100%;
+    min-height: 100%;
+    background: #061826;
+    font-size: 20px;
+}
+
+/*Menu responsivo*/
+body{
+    background-color:white;
+    width: 100%;
+    height: 100%;
+}
+
+header nav{
+    background: #061826;
+    z-index: 1000;
+    max-width: 1000px;
+    width: 80%;
+    margin: 0px auto;
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    position: relative;
+}
+header nav ul li a{
+    color: #89AAE6;
+    text-decoration: none;
+    display: inline-block;
+/*    padding: 20px;*/
+}
+header nav ul li span{
+    margin-right: 10px;
+}
+header nav ul li .icona2{
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+    margin-right: 0;
+}
+header nav ul li:hover a{
+    color: white;
+    background:  #89AAE6;
+
+}
+header nav:hover{
+    background-color:  #061826;
+}
+header nav ul li ul li:hover a{
+    background-color: #465173;
+}
+/*Menu hamburguesa*/
+#btn-menu{
+    display: none;
+   
+}
+header label{
+    color: aliceblue;
+    margin-left: 5px;
+    font-size: 30px;
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+header label:hover{
+    color: aqua;
+    cursor: pointer;
+    background: #061826;
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+}
+.menu li{
+    text-align: center;
+    flex-grow: 1;
+}
+.menu li:hover{
+    background: black;
+}
+.menu li a{
+    display: block;
+    padding: 15px 5px;
+    text-decoration: none;
+}
+
+/*Mediaquerys*/
+@media(max-width:600px){
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background: #465173;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    #btn-menu:checked~.menu{
+        margin: 0;
+    }
+/*    Ocultamos el submenu cuando se hace pequeño el menu*/
+    .menuhijo{
+        display: none;
+    }
+    
+}
+/*Menú hijo*/
+header nav ul li .subm-fill{
+    position: absolute;
+/*    display: block;*/
+    display: none;
+    width: 150%;
+    z-index: 1000;
+}
+
+header nav ul li .subm-fill li{
+    display: block;
+    overflow: hidden;  
+}
+header nav ul li .subm-fill li a{
+    display: block;
+    text-align: left;
+}
+header nav ul li .subm-fill li a span{
+    float: right;
+    position: relative;
+    margin-left: 10px;
+}
+header nav ul li:hover .subm-fill{
+    display: block;
+}
+
+/*Medias*/
+@media screen and(max-width:800px){
+    body{
+        padding-top: 60px;
+    }
+    header nav{
+        width: 40%;
+        right: 0%;
+        position: fixed;
+        overflow: hidden;
+    }
+    header nav ul li{
+        display: block;
+    }
+    header nav ul li a{
+        display: block;
+    }
+    header nav ul li .subm-fill{
+        width: 100%;
+        position: relative;
+    }
+    header nav ul li .subm-fill li a{
+        margin-left: 20px;
+    }
+    header nav ul li .icona2{
+        float: right;
+        margin-left: 10px;
+    }
+   
+}
+
+/*Contenido*/
+#contenido{
+    width: 100%;
+    height:100%;
+    background: white;
+    font-size: 19px;
+}
+/*Menu de imagenes*/
+.menuimag{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*Menu social*/
+.msocial{
+    position: fixed;
+    left: 0;
+    top: 200px;
+    z-index: 2000;
+}
+.msocial ul{
+    list-style: none;
+}
+.msocial ul li a{
+    display: inline-block;
+    color: white;
+/*    background: black;*/
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.msocial ul li .icon-facebook{background: #3b5998; width: 15px;}
+.msocial ul li .icon-twitter{background: #00abf0; width: 15px;}
+.msocial ul li .icon-youtube{background: #c4302b; width:15px;}
+.msocial ul li .icon-google{background: #d95232; width: 15px;}
+.msocial ul li a:hover{
+    padding: 20px 30px;
+    padding-left: 30px;
+    color: rgba(0,0,0,0.8);
+    font-size: 2em;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+/*Footer*/
+#footer{
+    width: 100%;
+    bottom: 0;
+/*Gracias a esto conseguimos que el footer quede anclado abajo */
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    background: #061826;
+/*Gracias a esto conseguimos que el texto del footer este justo en medio,es decir,que haya el mismo espacio*/
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+}

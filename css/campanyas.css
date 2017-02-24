@@ -1,0 +1,39 @@
+p{
+    font-size: 20px;
+    margin: 0;
+}
+div#foto, div#foto2,div#foto3,div#foto4,div#foto5{
+    width: 300px;
+    height: 300px;
+    background-image: url(../pictures/adopcion.jpg);
+    margin: 50px;
+   
+    display: inline-block;
+}
+div#foto2{
+    background-image: url(../pictures/adop.jpg);
+}
+div#foto3{
+    background-image: url(../pictures/xmas.jpg);
+}
+div#foto4{
+    background-image: url(../pictures/dona.png);
+}
+div#foto5{
+    background-image: url(../pictures/fondo.jpg);
+}
+div#info{
+    width: 300px;
+    height: 300px;
+    background-color: cornflowerblue;
+    opacity: 0;
+}
+div#foto:hover #info,div#foto2:hover #info,div#foto3:hover #info,div#foto4:hover #info,div#foto5:hover #info{ 
+    opacity: 1;
+}
+
+h1{
+    font-family: fantasy;
+    font-size: 40px;
+    margin-top: 10px;   
+}
